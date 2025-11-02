@@ -1,6 +1,8 @@
 # 🎬 Movie Finder
 
-![Preview do projeto](https://i.postimg.cc/vmQcJmct/Captura-de-tela-2025-11-02-102447.jpg)
+<p align="center">
+  <img src="https://i.postimg.cc/vmQcJmct/Captura-de-tela-2025-11-02-102447.jpg" width="700" alt="Preview do projeto Movie Finder" />
+</p>
 
 ## 🔎 Sobre o projeto
 
@@ -43,4 +45,3 @@ O projeto possui **modo claro e escuro automático** e design **totalmente respo
 👩🏻‍💻 **Natália Baptista Pastre**  
 [GitHub](https://github.com/natipastre)
 
----
