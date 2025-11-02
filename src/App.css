@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+/* ---------- BASE ---------- */
+body {
+  font-family: 'Inter', sans-serif;
+  background: #000;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+/* ---------- CONTEÚDO CENTRAL ---------- */
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+/* ---------- CABEÇALHO ---------- */
+h1 {
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.subtitle {
+  font-size: 1rem;
+  color: #bbb;
+  margin-bottom: 2rem;
+}
+
+/* ---------- OPÇÕES (Filmes/Séries) ---------- */
+.options {
+  margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.options label {
+  font-weight: 600;
+  cursor: pointer;
+  color: #ccc;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  transition: color 0.3s ease;
+}
+
+.options input[type="radio"] {
+  accent-color: #fff;
+  cursor: pointer;
+}
+
+.options label:hover {
+  color: #fff;
+}
+
+/* ---------- SEARCH BAR ---------- */
+.search-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 90%;
+  max-width: 500px;
+  background: #1f1f1f;
+  padding: 10px 15px;
+  border-radius: 50px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  transition: all 0.3s ease;
+  margin-bottom: 2rem;
+}
+
+.search-bar:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.15);
+}
+
+.search-bar input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 1rem;
+  padding: 8px 12px;
+  transition: all 0.3s ease;
+}
+
+.search-bar input::placeholder {
+  color: #aaa;
+}
+
+.search-bar button {
+  background: linear-gradient(90deg, #ff416c, #ff4b2b);
+  border: none;
+  color: white;
+  padding: 8px 18px;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.search-bar button:hover {
+  background: linear-gradient(90deg, #ff4b2b, #ff416c);
+  transform: scale(1.05);
+}
+
+/* ---------- GRADE DE FILMES ---------- */
+.movie-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+/* ---------- CARD DE FILME ---------- */
+.movie-card {
+  background: #1f1f1f;
+  color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 250px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.movie-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(255, 255, 255, 0.15);
+}
+
+.movie-card img {
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
+}
+
+.movie-info {
+  padding: 1rem;
+}
+
+/* ---------- TEXTO DO CARD ---------- */
+.movie-info h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.3rem;
+}
+
+.movie-info .year {
+  color: #aaa;
+  font-size: 0.9rem;
+  margin-bottom: 0.6rem;
+}
+
+.movie-info .overview {
+  font-size: 0.85rem;
+  color: #ddd;
+  line-height: 1.4;
+  margin-bottom: 0.8rem;
+  text-align: justify;
+}
+
+/* ---------- DIREÇÃO E ELENCO ---------- */
+.movie-info .director,
+.movie-info .cast {
+  font-size: 0.85rem;
+  color: #bbb;
+  margin-bottom: 0.4rem;
+  line-height: 1.3;
+}
+
+.movie-info .director strong,
+.movie-info .cast strong {
+  color: #ff4b2b;
+}
+
+/* ---------- BOTÃO DE TRAILER ---------- */
+.trailer-btn {
+  display: inline-block;
+  background: linear-gradient(90deg, #ff416c, #ff4b2b);
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 30px;
+  padding: 8px 16px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(255, 75, 43, 0.3);
+  border: none;
+  cursor: pointer;
+}
+
+.trailer-btn:hover {
+  background: linear-gradient(90deg, #ff4b2b, #ff416c);
+  transform: scale(1.05);
+  box-shadow: 0 0 12px rgba(255, 75, 43, 0.5);
+}
+
+.no-trailer {
+  color: #999;
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+}
+
+/* ---------- ESTADOS ---------- */
+.status {
+  font-size: 1.1rem;
+  color: #999;
+  margin-top: 2rem;
+}
+
+.error {
+  color: #ff5c5c;
+  font-weight: 700;
+}
+
+/* ---------- RODAPÉ ---------- */
+.footer {
+  margin-top: 3rem;
+  padding: 1.5rem 0;
+  width: 100%;
+  text-align: center;
+  color: #aaa;
+  font-size: 0.95rem;
+  border-top: 1px solid #222;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.4rem;
+  letter-spacing: 0.3px;
+}
+
+.footer p {
+  margin: 0;
+  text-align: center;
+}
+
+.footer .name {
+  font-weight: 600;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.footer .name:hover {
+  color: #ff4b2b;
+}
+
+.footer .heart {
+  color: #ff4b2b;
+  animation: pulse 1.5s infinite;
+}
+
+.footer .code {
+  color: #ff4b2b;
+  font-family: monospace;
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); opacity: 0.9; }
+  50% { transform: scale(1.2); opacity: 1; }
+}
+
+/* ---------- RESPONSIVO ---------- */
+@media (max-width: 600px) {
+  h1 { font-size: 2rem; }
+
+  .movie-card {
+    width: 90%;
+  }
+
+  .movie-card img {
+    height: 420px;
+  }
+
+  .search-bar {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .search-bar input {
+    width: 90%;
+  }
+
+  .search-bar button {
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .trailer-btn {
+    font-size: 0.9rem;
+  }
+}
