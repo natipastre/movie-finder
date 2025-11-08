@@ -44,15 +44,27 @@ O projeto possui **modo claro e escuro automático** e design **totalmente respo
 
 ---
 
-## 👩🏻‍💻 Autora
+## 👩🏻‍💻 Autora  
 
 <p align="center">
-  <b>💡 Desenvolvido por:</b><br><br>
-  <img src="https://avatars.githubusercontent.com/natipastre" width="120px" style="border-radius: 50%;" alt="Foto de perfil de Natália Pastre"/><br><br>
+  <b>💡 Desenvolvido por</b>
+</p>
+
+<p align="center">
+  <img src="https://avatars.githubusercontent.com/natipastre" width="120" style="border-radius: 50%;" alt="Foto de perfil de Natália Baptista Pastre"/>
+</p>
+
+<p align="center">
   <b>👩🏻‍💻 Natália Baptista Pastre</b><br>
-  <i>Desenvolvedora Front-End em formação</i><br><br>
+  <i>Desenvolvedora Front-End em formação</i>
+</p>
+
+<p align="center">
   🌐 <a href="https://www.linkedin.com/in/nataliapastre-dev/" target="_blank">LinkedIn</a> • 
-  <a href="https://github.com/natipastre" target="_blank">GitHub</a><br><br>
+  <a href="https://github.com/natipastre" target="_blank">GitHub</a>
+</p>
+
+<p align="center">
   💙 <i>Feito com dedicação por Natália Baptista Pastre — 2025</i>
 </p>
 
